@@ -17,7 +17,8 @@ function sum(arr) {
 
   arr.forEach((element) => {
     if (Array.isArray(element)) {
-      return (result += sum(element));
+      result += sum(element);
+      return;
     }
 
     result += element;
